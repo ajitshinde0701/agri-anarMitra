@@ -1,0 +1,114 @@
+/* Home page css */
+.home-container {
+  margin-top: 60px;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background-color: var(--bg-page);
+}
+
+/* HERO SECTION */
+.home-hero {
+  width: 100vw;
+  min-height: 60vh;
+
+  background: url(C:\Users\ACER\Desktop\Agri-Project\Agri\src\assets\pomogranate.jpg);
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(05,05,05,3.3);
+  padding: 60px 20px;
+}
+
+.home-hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.home-hero p {
+  font-size: 18px;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* FEATURES SECTION */
+.home-features {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 17px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  background-color:#a8d08d; 
+}
+
+.feature-card h3 {
+  margin-bottom: 17px;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* CTA SECTION */
+.home-cta {
+  width: 100vw;
+  background-color: var(--green-primary);
+  color: rgb(175, 134, 51);
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.home-cta h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.home-cta button {
+  background-color: rgb(190, 70, 70);
+  color: var(--green-primary);
+  padding: 14px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.home-cta button:hover {
+  background-color: var(--green-light);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .home-hero h1 {
+    font-size: 30px;
+  }
+
+  .home-hero p {
+    font-size: 16px;
+  }
+}

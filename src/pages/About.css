@@ -1,0 +1,62 @@
+.about-container {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  margin-top: 60px;
+  background-color: #f5f7f6;
+}
+
+.about-hero {
+  width: 100vw;
+  min-height: 45vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url(C:\Users\ACER\Desktop\Agri-Project\Agri\src\assets\background-about.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+.about-hero h1{
+  font-size: 50px;
+  margin-bottom: 15px;
+  color : white;
+  text-shadow: 2px 2px 4px rgba(05,05,05,3.3);
+}
+
+.about-content {
+  max-width: 1100px;
+  margin: 70px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.about-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+.about-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  background-color:#a8d08d; 
+}
+
+.about-card h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}

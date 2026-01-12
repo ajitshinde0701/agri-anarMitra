@@ -1,0 +1,107 @@
+/* Reset & global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f6f8; /* light background for pages */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #2e7d32;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Form Inputs */
+input, textarea {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Page spacing */
+section {
+  padding: 60px 0;
+}
+
+/* Footer (optional, in future) */
+footer {
+  background-color: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
