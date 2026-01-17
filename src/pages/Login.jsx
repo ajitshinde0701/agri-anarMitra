@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
@@ -7,9 +8,23 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [extraField, setExtraField] = useState("");
 
+  const navigate = useNavigate(); // ✅ NEW
+
   const handleLogin = (e) => {
     e.preventDefault();
-    alert("Login Successful!");
+
+    // Temporary client-side role-based navigation
+    if (role === "farmer") {
+      navigate("/dashboard/farmer");
+    } else if (role === "merchant") {
+      navigate("/dashboard/merchant");
+    } else if (role === "fertilizer-store") {
+      navigate("/dashboard/fertilizer-store");
+    } else if (role === "advisor") {
+      navigate("/dashboard/advisor");
+    } else {
+      alert("Please select a role");
+    }
   };
 
   return (
