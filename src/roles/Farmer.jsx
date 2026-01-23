@@ -3,7 +3,7 @@ import "./Dashboard.css";
 const Farmer = () => {
   return (
     <div className="dashboard">
-      {/* <h2>Farmer Dashboard</h2> */}
+      <h2>Farmer Dashboard</h2>
 
       <div className="card-grid">
         <div className="card">
