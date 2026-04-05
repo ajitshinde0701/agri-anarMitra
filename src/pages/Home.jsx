@@ -31,13 +31,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="feature-card">
-          <h3>Weather Alerts</h3>
-          <p>
-            Stay informed with precise weather alerts to safeguard your crops
-            and plan farming activities efficiently.
-          </p>
-        </div>
+        
 
         <div className="feature-card">
           <h3>Fertilizer & Pest Management</h3>

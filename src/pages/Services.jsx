@@ -62,22 +62,6 @@ const Services = () => {
           </p>
         </div>
 
-        {/* NEW SERVICES */}
-        <div className="service-card">
-          <h3>Irrigation Management</h3>
-          <p>
-            Smart irrigation planning using soil moisture and weather data to
-            optimize water usage and increase crop yield efficiently.
-          </p>
-        </div>
-
-        <div className="service-card">
-          <h3>Soil Analysis</h3>
-          <p>
-            Monitor soil health and nutrient levels to guide fertilizer use
-            and improve long-term soil fertility for sustainable farming.
-          </p>
-        </div>
       </section>
     </div>
   );
